@@ -18,6 +18,7 @@ Node* insertAtStart(Node* head){
     new_node->next=head;
     return new_node;
 }
+
 void traversing(Node* head){
     Node* temp=head;
 
