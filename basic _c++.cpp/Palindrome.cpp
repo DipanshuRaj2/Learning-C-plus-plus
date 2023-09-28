@@ -13,7 +13,18 @@ bool is_palindrome(string text)
 int main(){
     string test1 = "abccba"; 
 
-    string test2 = "race star";
+    string test2 = "racecar";
 
-    is_palindrome(test1);
+
+
+    // cout << is_palindrome(test2);
+    if(is_palindrome(test1))
+        cout << test1 <<"  -> is a palindrome" << endl;
+    else
+        cout << test1 <<"  -> is not a palindrome" << endl;
+
+    if(is_palindrome(test2))
+        cout << test2 <<" -> is a palindrome" << endl;
+    else
+        cout << test2 <<" -> is not a palindrome" <<endl;
 }
