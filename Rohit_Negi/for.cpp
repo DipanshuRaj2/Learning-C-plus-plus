@@ -44,11 +44,11 @@
 //
 
 // sum of n natural number
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main()
-{
+// int main()
+// {
     // int n;
 
     // cout << "Enter the number :";
@@ -83,7 +83,7 @@ int main()
     // {
     //     cout << "not Prime ";
     //     return 0;
-    // }
+    // } 
     // else
     // {
     //     for (int i = 2; i < n; i++)
@@ -102,21 +102,29 @@ int main()
 
 
     //fibonacci number;
-    int n , curr;
-    cout << "enter the last no. you want to display fibbonacci"; 
-    cin >> n;
+//     int n , curr;
+//     cout << "enter the last no. you want to display fibbonacci"; 
+//     cin >> n;
 
-    int pre = 1;
-    int last = 0;
-    cout << last<<" " << pre <<" ";
-    for(int i = 2; i < n; i++)
-    {
-        curr=last +pre;
+//     int pre = 1;
+//     int last = 0;
+//     cout << last<<" " << pre <<" ";
+//     for(int i = 2; i < n; i++)
+//     {
+//         curr=last +pre;
 
-        last = pre;
-        pre = curr;
-        cout << curr<<" ";
-    }
+//         last = pre;
+//         pre = curr;
+//         cout << curr<<" ";
+//     }
+    
+    
+// }
+
+#include<iostream>
+using namespace std;
+
+int main(){
     
     
 }
