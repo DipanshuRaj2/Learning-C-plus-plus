@@ -1,56 +1,111 @@
-// // #include<iostream>
-// // using namespace std;
-// // int main(){
-// //     int num ;
-// //     cin >> num;
-// //     int rem = 0;
-// //     int ans = 0;
-// //     int mul = 1;
-// //     while(num >0){
-// //         rem = num % 2;
-// //         num = num / 2;
-// //         ans = rem*mul+ans;
-// //         mul = mul*10;
-// //     }
-// //     cout << ans<<" ";
+/*#include<iostream>
+using namespace std;
+int reverseDigit(int num){
+    int rem = 0 , ans = 0 , mul = 1;
+    while(num>0){
+        rem = num % 10;
 
-   
-// // }
+        num = num /10;
 
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int inp ;
-//     cin >> inp;
-//     int out=0;
-//     int last_digit =0;
+        ans = ans * mul + rem;
 
-//     while(inp > 0){
-//         last_digit = inp %10;
+        mul = mul *10;
+        
+    }
 
-//         // out = last_digit;
+    return ans;
+}
+int main(){
+    int num;
+    cin >> num;
 
-//         out = out *10 + last_digit;
+    cout<<"reverse Digit: " <<reverseDigit(num);
+}*/
 
-//         inp = inp /10;
-
-//     }
-//     cout << out;
-// }
+//convert Decimal to Binary 
+// naive solution
+/*
 #include<iostream>
 using namespace std;
-int main(){
-    int n ;
-    cin>> n;
-    int inp = 0;
-    int ans = 0;
-    int mul = 1;
-    while(n> 0){
-       inp   = n % 2;
-       n = n/2;
-       ans  = inp * mul +ans;
-       mul = mul *10;
 
+int DecimaltoBinary(int num){
+    int rem = 0 , ans = 0 , mul = 1;
+    while(num > 0){
+
+        rem = num % 2; // rem = num & 1; 
+
+        num = num / 2; // num = num >>1; right shift
+
+        ans = rem * mul + ans;
+
+        mul = mul * 10;
+        
     }
-    cout << ans;
+    return ans;
+    
+}
+
+int main(){
+    int num;
+
+    cin >> num;
+
+    cout <<"Decimal to Binary: "<<DecimaltoBinary(num);
+}
+*/
+/*
+#include<iostream>
+using namespace std;
+
+int binarytoDecimal(int num){
+    int mul = 1 ,ans = 0, rem = 0;
+    while (num > 0)
+    {   
+        rem = num % 10 ;
+
+        num =num/10;
+
+        ans = rem * mul + ans;
+
+        mul = mul*2;
+    }
+    return ans;
+    
+}
+
+int main(){
+    int num;
+
+    cin >> num;
+
+    cout <<"Binary to Decimal "<<binarytoDecimal(num);
+}
+*/
+
+//Decimal to Binary
+#include<iostream>
+using namespace std;
+int DecimaltoOctal(int num){
+    
+    int rem = 0 , mul = 1 , ans = 0;
+    while(num > 0){
+
+        rem  = num % 8;
+
+        num = num / 8;
+
+        ans = rem * mul + ans;
+
+        mul = mul * 10;
+ 
+    }
+    return ans;
+}
+int main(){
+
+    int num;
+
+    cin >> num;
+
+    cout <<"Decimal to Octal: "<<DecimaltoOctal(num);
 }
