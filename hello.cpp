@@ -38,7 +38,7 @@ int main()
     // b=temp;
     // cout<< a << endl;
     // cout << b<< endl;
-
+    int ans = 89 ;
     int a = 3;
     int b =5;
     a = a+b;
