@@ -33,22 +33,39 @@ int main()
     // int b = 30; // b = 30;
     // int temp;
 
-    // temp = a;
-    // a=b;
-    // b=temp;
-    // cout<< a << endl;
-    // cout << b<< endl;
-    int ans = 89 ;
-    int a = 3;
-    int b =5;
-    a = a+b;
-    b = a-b;
-    a = a-b;
+    // fibonacci series
+    // int a = 0 , b = 1, c ;
+    // cout << a <<  " " <<b<<" ";
+    // for(int i = 1; i<10;i++){
+    //     c = a+b; 
+    //     a = b;
+    //     b = c;
+    //     cout << c<<" ";
+    // }
+    // factorial number
+    // int n1;
+    // cin>> n1;
+    // int n = 1;
+    // for(int i = 1; i<=n1; i++){
+    //     n = n * i;
+    // }
+    // cout << n;
 
-    cout << a<<"\n"<<b;
+    //check a leap year
+    int n;
+    cout << "Enter the Leap year ";
+    cin >> n;
+    if(n%400==0 && n%100==0 && n%4==0)
+        cout << "Leap year";
 
+    else if(n%4==0 && n%100==0 && n%400!=0)
+        cout << "Not a Leap year";
 
+    else if(n%4==0 && n%100!=0 && n%400!=0)
+        cout << "Leap Year";
 
-     
+    else
+        cout <<"Not a Leap Year";
+
     }
 
