@@ -52,20 +52,45 @@ int main()
     // cout << n;
 
     //check a leap year
-    int n;
-    cout << "Enter the Leap year ";
+    // int n;
+    // cout << "Enter the Leap year ";
+    // cin >> n;
+    // if(n%400==0 && n%100==0 && n%4==0)
+    //     cout << "Leap year";
+
+    // else if(n%4==0 && n%100==0 && n%400!=0)
+    //     cout << "Not a Leap year";
+
+    // else if(n%4==0 && n%100!=0 && n%400!=0)
+    //     cout << "Leap Year";
+
+    // else
+    //     cout <<"Not a Leap Year";
+
+    // }
+   // count the prime no between 1 to 100;
+//     int i, k;
+//    for(i = 2; i <= 100; i++){
+//         for(k = 2; k<i; k++){
+//             if(i % k == 0){
+//                 cout <<"";
+//                 break;
+//             }
+//         }
+//         if(i == k)
+//          cout<<k <<" ";
+//     }    
+    int n ;
     cin >> n;
-    if(n%400==0 && n%100==0 && n%4==0)
-        cout << "Leap year";
-
-    else if(n%4==0 && n%100==0 && n%400!=0)
-        cout << "Not a Leap year";
-
-    else if(n%4==0 && n%100!=0 && n%400!=0)
-        cout << "Leap Year";
-
-    else
-        cout <<"Not a Leap Year";
-
+    for(int i = 1; i<=n; i++){
+        if(n%i != 0){
+            cout << i<<" ";
+        }
     }
+
+
+   }
+        
+
+
 
