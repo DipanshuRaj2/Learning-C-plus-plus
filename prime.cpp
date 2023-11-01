@@ -10,7 +10,7 @@ void countPrime(int n){
            
         }
         if(j==i){
-            cout<<j<<" ";
+            cout<<j<<" ";//jkijdnbhf
         }
     }
 
