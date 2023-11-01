@@ -1,34 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-int main(){
-    int count=1;
-    for (int i = 3; i <= 100; i++)
-    {
-        /* code */
-        int count1=0;
-        for (int j = 2; j < i; j++)
-        {
-            /* code */
-            if(i%j==0)
-            {
-                count1++;
-
+void countPrime(int n){
+    int i,j;
+    for(i = 2; i< n; i++){
+        for(j = 2; j<i; j++){
+            if(i%j == 0){
+                break;
             }
-
+           
         }
-        if(count1==0)
-        {
-            cout<<i<<" ";
-            count=count+1;
+        if(j==i){
+            cout<<j<<" ";
         }
-        
-        
-        
-
     }
 
-    cout<<endl;
-    cout<<"the total prime is"<<count;
-    
+}
+int main(){
+    int n;
+    cin >> n;
+    countPrime(n);
 }
