@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     /*
-    ? c style strings
+    
     char str[] ="abcr";
     char str1 [] ="abae";
 
