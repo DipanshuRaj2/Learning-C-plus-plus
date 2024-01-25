@@ -1,8 +1,3 @@
 {
-    "C_Cpp.errorSquiggles": "disabled",
-    "files.associations": {
-        "algorithm": "cpp",
-        "xutility": "cpp",
-        "list": "cpp"
-    }
+    "C_Cpp.errorSquiggles": "disabled"
 }
