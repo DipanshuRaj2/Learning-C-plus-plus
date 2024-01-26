@@ -80,13 +80,15 @@ int main()
 //         if(i == k)
 //          cout<<k <<" ";
 //     }    
-    int n ;
-    cin >> n;
-    for(int i = 1; i<=n; i++){
-        if(n%i != 0){
-            cout << i<<" ";
-        }
-    }
+    // int n ;
+    // cin >> n;
+    // for(int i = 1; i<=n; i++){
+    //     if(n%i != 0){
+    //         cout << i<<" ";
+    //     }
+    // }
+    int n = 10>>>3;
+    cout << n;
 
 
    }
