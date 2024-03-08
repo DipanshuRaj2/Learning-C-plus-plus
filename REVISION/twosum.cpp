@@ -25,22 +25,40 @@
 //maxium subarray
 #include<bits/stdc++.h>
 using namespace std;
-int maximumSubarraySum(vector<int>v, int target){
+int maximumSubarraySum(vector<int>v){
     int maxi = INT_MIN;
+    int sum = 0;
+
+    int start = 0;
+    int ansStart = -1;
+    int ansEnd = -1;
     for(int i = 0; i<v.size(); i++){
-        int sum = 0;
+        if (sum == 0)
+        {
+            start = i;
+        }
         sum += v[i];
         if(sum < 0){
             sum = 0;
         }
-        maxi = max(sum, maxi);
+        if(maxi < sum){
+           maxi = sum;
+            ansStart = start;
+            ansEnd = i;
+        } 
     }
+
+    for(int i = ansStart; i<=ansEnd; i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
     return maxi;
 }
 int main()
 {
     vector<int>arr={-2,-3,4,-1,-2,1,5,-3};
-    int ans = 7;
-    cout<<maximumSubarraySum(arr, ans);
+    
+    cout<<maximumSubarraySum(arr);
+    
    return 0;
 }
