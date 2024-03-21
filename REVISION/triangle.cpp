@@ -18,3 +18,29 @@
 //     }
 
 //    return 0;
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n = 3;
+    int space = 0;
+    for(int i = 1; i<=3; i++){
+        for(int j = 0; j<space; j++){
+            cout<<" ";
+        }
+        space++;
+        for(int j = n; j>=i; j--){
+            cout<<"*";
+        }
+        for(int j = n; j>i;j--){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+   return 0;
+}
+/*
+* * *
+  * *
+    * 
+*/
